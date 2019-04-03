@@ -3,14 +3,14 @@ import numpy as np
 import pandas as pd
 
 
-def print_save_summary(input_fpath,output_fpath):
+def print_save_summary(input_fpath, output_fpath):
     """
     input_fpath:
     """
     df = pd.read_csv(input_fpath)
     summary = df.describe()
     summary.to_csv(output_fpath)
-    print(np.round(summary,2))
+    print(np.round(summary, 2))
 
 
 if __name__ == '__main__':
